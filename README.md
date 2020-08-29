@@ -2,12 +2,13 @@
 
   ![GitHub repo size](https://img.shields.io/github/repo-size/MaiaBetancourt/ReadMeGenerator)
 
-  # Project Title: ReadMe
+  # Project Title: README
 
-  ## It ajkl
+  ## Brief Description:
+  This app generates a proper read me entirely through the command line based on the users input.
 
-  lajdksnv
   ## Table of Contents:
+  This app contains a title, installation, test, contributors, usage, and license.
   - [title](#title)
   - [installation](#installation)
   - [tests](#tests)
@@ -16,20 +17,22 @@
   - [license](#license)
 
   ## Installation:
-  > afdsj
+  > The user uses the command line to create this app.
 
   ## Usage:
-  > ldjsahf
+  > The user must run the command node index.js to properly run this app.
 
   ## Tests:
-  > lsadf
+  > We test it usuing the command line and running node index.js along with it.
 
   ## Contributors:
-  > ldafshk
+  > No contributors as of now but hope for the future.
 
-  ## License
+  ## License 
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  License MIT
 
-  lfdsjah
-
-  ## jakr
+  ## Questions
+  
+  Is there any questions I can answer for you?
 

@@ -20,12 +20,12 @@ const questions = [
   },
   {
     type: "input",
-    message: "What is gitHub repo name?",
+    message: "What is your gitHub repo name?",
     name: "githubrepo",
   },
   {
     type: "input",
-    message: "What is the title?",
+    message: "What is the title of the project?",
     name: "title",
   },
   {

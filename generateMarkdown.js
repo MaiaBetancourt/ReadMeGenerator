@@ -9,8 +9,8 @@ function generateMarkdown(userinput) {
   ## Brief Description:
   ${userinput.description}
 
-  ${userinput.contents}
   ## Table of Contents:
+  ${userinput.contents}
   - [title](#title)
   - [installation](#installation)
   - [tests](#tests)
@@ -31,8 +31,7 @@ function generateMarkdown(userinput) {
   > ${userinput.contributors}
 
   ## License 
-  Licensed under the [MIT License](LICENSE)
-
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ${userinput.license}
 
   ## Questions
