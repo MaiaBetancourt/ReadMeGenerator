@@ -6,7 +6,8 @@ function generateMarkdown(userinput) {
 
   # Project Title: ${userinput.title}
 
-  ## ${userinput.description}
+  ## Brief Description:
+  ${userinput.description}
 
   ${userinput.contents}
   ## Table of Contents:
@@ -29,11 +30,14 @@ function generateMarkdown(userinput) {
   ## Contributors:
   > ${userinput.contributors}
 
-  ## License
+  ## License 
+  Licensed under the [MIT License](LICENSE)
 
   ${userinput.license}
 
-  ## ${userinput.questions}
+  ## Questions
+  
+  ${userinput.questions}
 
 `;
 }
