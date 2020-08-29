@@ -9,56 +9,73 @@
 //   * Questions
 const fs = require("fs");
 const inquirer = require("inquirer");
+
+const generateMarkdown = require("./generateMarkdown");
 // array of questions for user
 const questions = [
   {
     type: "input",
-    message: "What is your name?",
-    name: "us",
+    message: "What is your gitHub username?",
+    name: "githubuser",
   },
   {
     type: "input",
-    message: "What is your name?",
-    name: "usern",
+    message: "What is gitHub repo name?",
+    name: "githubrepo",
   },
   {
     type: "input",
-    message: "What is your name?",
-    name: "user",
+    message: "What is the title?",
+    name: "title",
   },
   {
     type: "input",
-    message: "What is your name?",
-    name: "usernam",
+    message: "How can you describe the app?",
+    name: "description",
   },
   {
     type: "input",
-    message: "What is your name?",
-    name: "userna",
+    message: "What contents does this app contain?",
+    name: "contents",
   },
   {
     type: "input",
-    message: "What is your name?",
-    name: "use",
+    message: "How do we install it?",
+    name: "installation",
   },
   {
     type: "input",
-    message: "What is your name?",
-    name: "us",
+    message: "How can we use it?",
+    name: "usage",
   },
   {
     type: "input",
-    message: "What is your name?",
-    name: "u",
+    message: "Can you name your license?",
+    name: "license",
+  },
+  {
+    type: "input",
+    message: "Do you have any contributors?",
+    name: "contributors",
+  },
+  {
+    type: "input",
+    message: "How can we test it?",
+    name: "test",
+  },
+  {
+    type: "input",
+    message: "Any questions?",
+    name: "questions",
   },
 ];
 inquirer.prompt(questions).then(function (response) {
-  let userinput = JSON.stringify(response, null, "\t");
-  console.log(userinput);
   
+  
+  response = generateMarkdown(response);
   // function to write README file
   // function writeToFile(fileName, data) {}
-  fs.writeFile("readME.md", (userinput), function (err){
+  fs.writeFile("readME.md", (response), function (err){
       console.log("YAY!!");
     });
 });
