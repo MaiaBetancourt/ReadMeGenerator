@@ -25,7 +25,8 @@ function generateMarkdown(userinput) {
   > ${userinput.usage}
 
   ## Tests:
-  > ${userinput.test}
+  ${userinput.test}
+  - [ReadMe Test Link](https://youtu.be/uYCowOzli1U)
 
   ## Contributors:
   > ${userinput.contributors}
